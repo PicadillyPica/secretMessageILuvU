@@ -7938,25 +7938,6 @@
   "resolved" "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
   "version" "2.1.2"
 
-"msgpackr-extract-win32-x64@1.1.0":
-  "integrity" "sha512-6AJdM5rNsL4yrskRfhujVSPEd6IBpgvsnIT/TPowKNLQ62iIdryizPY2PJNFiW3AJcY249AHEiDBXS1cTDPxzA=="
-  "resolved" "https://registry.npmjs.org/msgpackr-extract-win32-x64/-/msgpackr-extract-win32-x64-1.1.0.tgz"
-  "version" "1.1.0"
-
-"msgpackr-extract@^1.0.14":
-  "integrity" "sha512-eFFRviOsqjfr6tOBwuccUdTaTPWn3Rb/Kf5zjoz5IZJMpQD4ZeLecDcRzuze+jzlqQ2cJo1gyuV8dCFEojWkjg=="
-  "resolved" "https://registry.npmjs.org/msgpackr-extract/-/msgpackr-extract-1.1.3.tgz"
-  "version" "1.1.3"
-  dependencies:
-    "node-gyp-build-optional-packages" "^4.3.1"
-  optionalDependencies:
-    "msgpackr-extract-darwin-arm64" "1.1.0"
-    "msgpackr-extract-darwin-x64" "1.1.0"
-    "msgpackr-extract-linux-arm" "1.1.0"
-    "msgpackr-extract-linux-arm64" "1.1.0"
-    "msgpackr-extract-linux-x64" "1.1.0"
-    "msgpackr-extract-win32-x64" "1.1.0"
-
 "msgpackr@^1.5.4":
   "integrity" "sha512-JG0V47xRIQ9pyUnx6Hb4+3TrQoia2nA3UIdmyTldhxaxtKFkekkKpUW/N6fwHwod9o4BGuJGtouxOk+yCP5PEA=="
   "resolved" "https://registry.npmjs.org/msgpackr/-/msgpackr-1.5.5.tgz"
@@ -8097,11 +8078,6 @@
   "integrity" "sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw=="
   "resolved" "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.1.tgz"
   "version" "2.6.1"
-
-"node-gyp-build-optional-packages@^4.3.1":
-  "integrity" "sha512-pxljizahvoXKVtlo+D+YOcHYG2931/aBdNoqfynHDNwWRIe94CgkIUZfeOOFaHY+hl5lYkyI9RzGfr/gWxlR4Q=="
-  "resolved" "https://registry.npmjs.org/node-gyp-build-optional-packages/-/node-gyp-build-optional-packages-4.3.1.tgz"
-  "version" "4.3.1"
 
 "node-gyp-build@^4.2.3", "node-gyp-build@^4.3.0":
   "integrity" "sha512-amJnQCcgtRVw9SvoebO3BKGESClrfXGCUTX9hSn1OuGQTQBOZmVd0Z0OlecpuRksKvbsUqALE8jls/ErClAPuQ=="
@@ -9308,6 +9284,11 @@
   "version" "2.0.9"
   dependencies:
     "prop-types" "^15.7.2"
+
+"react-icons@^4.3.1":
+  "integrity" "sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ=="
+  "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.3.1.tgz"
+  "version" "4.3.1"
 
 "react-is@^16.13.1", "react-is@^16.7.0", "react-is@>= 16.8.0":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
@@ -11069,15 +11050,20 @@
   dependencies:
     "prelude-ls" "^1.2.1"
 
-"type-fest@^0.13.1", "type-fest@^0.20.2":
-  "integrity" "sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ=="
-  "resolved" "https://registry.npmjs.org/type-fest/-/type-fest-0.20.2.tgz"
-  "version" "0.20.2"
+"type-fest@^0.13.1":
+  "integrity" "sha512-34R7HTnG0XIJcBSn5XhDd7nNFPRcXYRZrBB2O2jdKqYODldSzBAqzsWoZYYvduky73toYS/ESqxPvkDf/F0XMg=="
+  "resolved" "https://registry.npmjs.org/type-fest/-/type-fest-0.13.1.tgz"
+  "version" "0.13.1"
 
 "type-fest@^0.18.0":
   "integrity" "sha512-OIAYXk8+ISY+qTOwkHtKqzAuxchoMiD9Udx+FSGQDuiRR+PJKJHc2NJAXlbhkGwTt/4/nKZxELY1w3ReWOL8mw=="
   "resolved" "https://registry.npmjs.org/type-fest/-/type-fest-0.18.1.tgz"
   "version" "0.18.1"
+
+"type-fest@^0.20.2":
+  "integrity" "sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ=="
+  "resolved" "https://registry.npmjs.org/type-fest/-/type-fest-0.20.2.tgz"
+  "version" "0.20.2"
 
 "type-fest@^0.21.3":
   "integrity" "sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w=="
