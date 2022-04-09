@@ -1,0 +1,44 @@
+.about-container {
+  padding: 10% 7%;
+
+  .sentences {
+    // opacity: 1;
+    // transition: opacity 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    // animation: fadeIn 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+
+    // &:hover {
+    //     animation: fadeOut 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+
+    //     .firstSentence:hover {
+    //         animation: fadeIn 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    //         z-index: 10;
+    //     }
+
+    // }
+
+
+    .text {
+        animation: fadeIn 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    }
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.15;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.15;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

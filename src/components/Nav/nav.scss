@@ -1,0 +1,19 @@
+.menu-icon {
+    
+    // background: teal;
+    &:hover {
+        color: var(--main-color);
+    }
+}
+
+.user-icon {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 10%;
+    height: 10%;
+
+    &:hover {
+        color: var(--main-color);
+    }
+}
