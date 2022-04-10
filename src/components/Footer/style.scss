@@ -1,3 +1,122 @@
+$transition: all 200ms cubic-bezier(0.77, 0, 0.175, 1);
 .footer-container {
     margin: 10% 7% 0 0;
+    .text-container {
+        margin: 0 0 0 0;
+        width: 100vw;
+        height: 25vh;
+        .text {
+            white-space: nowrap;
+            font-size: 11.089rem;
+            font-weight: 700;
+            color: var(--bg-color);
+            text-align: center;
+            color: transparent;
+            -webkit-text-stroke: 2px black;
+            line-height: 120px;
+            .text-row {
+                height: 0.1vh;
+                span {
+                    transition: all 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+                    transform: scale(1.0);
+                }
+                span:hover {
+                    color: var(--main-color);
+                    border-color: transparent;
+                    z-index: 18;
+                }
+            }
+        }
+    }
+    .contact-container {
+        width: 100vw;
+        margin-left: 1%;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        .contact-row {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            white-space: nowrap;
+            .icons {
+                color: black;
+                height: 55px;
+                width: 100px;
+                transition: $transition;
+                animation: rotateLeft 200ms cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+                &:hover {
+                    color: var(--main-color);
+                    transition: $transition;
+                    animation: rotateRight 200ms cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+                }
+            }
+            .email-text {
+                margin-left: 10%;
+                white-space: nowrap;
+                font-size: var(--font-medium-small);
+                font-weight: 400;
+                line-height: 89px;
+                text-align: left;
+                color: black;
+                transition: $transition;
+                line-height: auto;
+                animation: translateUp 200ms cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+                &:hover {
+                    color: var(--main-color);
+                    transition: $transition;
+                    animation: translateDown 200ms cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+                }
+            }
+        }
+        .icon {
+            color: black;
+            margin-left: 55%;
+            height: 55px;
+            width: 55px;
+            transition: $transition;
+            animation: rotateLeft 200ms cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+            &:hover {
+                color: var(--main-color);
+                transition: $transition;
+                animation: rotateRight 200ms cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+            }
+        }
+    }
+}
+
+@keyframes rotateRight {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes rotateLeft {
+    from {
+        transform: rotate(20deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes translateDown {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(10, 10, 0);
+    }
+}
+
+@keyframes translateUp {
+    from {
+        transform: translate3d(10, 10, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
 }

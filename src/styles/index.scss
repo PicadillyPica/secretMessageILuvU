@@ -1,103 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "./_mixins.scss";
-
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 html {
-  scroll-behavior: smooth;
-
-  &,
-  * {
-    cursor: none;
-  }
+    scroll-behavior: smooth;
+    &,
+    * {
+        cursor: none;
+    }
 }
 
 :root {
-  $colorlists: (#F47E7E, #FFADFF, #FFACFF);
-
-  // @each $color in $colorlists{
-  //   &::root-#{index($colorlists, ($color))} {
-  //     --main-color: $color;
-  //   }
-  // }
-  --main-color: #F47E7E;
-  --bg-color: #F0F0F3;
-
-
-  --font-extra-large: 17.942rem;
-  --font-large: 11.089rem;
-  --font-medium-large: 6.854rem;
-  --font-medium: 4.236rem;
-  --font-medium-small: 2.618rem;
-  --font-small: 1.618rem;
-
+    $colorlists: (#F47E7E, #FFADFF, #FFACFF);
+    // @each $color in $colorlists{
+    //   &::root-#{index($colorlists, ($color))} {
+    //     --main-color: $color;
+    //   }
+    // }
+    --main-color: #F47E7E;
+    --bg-color: #F0F0F3;
+    --font-extra-large: 17.942rem;
+    --font-large: 11.089rem;
+    --font-medium-large: 6.854rem;
+    --font-medium: 4.236rem;
+    --font-medium-small: 2.618rem;
+    --font-small: 1.618rem;
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
-  background-color: var(--bg-color);
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--bg-color);
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 h1 {
-  font-size: clamp(var(--font-medium-large),15vw,var(--font-extra-large));
-  font-weight: 700;
-  text-align: center;
-  color: transparent;
-  -webkit-text-stroke: 2px black;
-  line-height: 250px;
-  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none;
-  user-select: none;
+    font-size: clamp(var(--font-medium-large), 15vw, var(--font-extra-large));
+    font-weight: 700;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    line-height: 250px;
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h2 {
-  font-size: var(--font-medium-large);
-  font-weight: 700;
-  text-align: center;
-  color: transparent;
-  -webkit-text-stroke: 2px black;
-  line-height: 250px;
+    font-size: var(--font-medium-large);
+    font-weight: 700;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    line-height: 250px;
 }
 
 h3 {
-  font-size: var(--font-medium);
-  font-weight: 300;
-  line-height: 89px;
-  text-align: left;
-  color: black;
-  line-height: auto;
-} 
+    font-size: var(--font-medium);
+    font-weight: 300;
+    line-height: 89px;
+    text-align: left;
+    color: black;
+    line-height: auto;
+}
+
+h4 {
+    white-space: nowrap;
+    font-size: var(--font-medium-small);
+    font-weight: 300;
+    line-height: 89px;
+    text-align: left;
+    color: black;
+    line-height: auto;
+}
 
 .btn {
-  font-size: clamp(var(--font-small),15vw,var(--font-medium-small));
-  font-weight: 300;
-  border: black solid 4px;
-  color: black;
-  background: var(--main-color);
-  display: inline-block;
-  padding: 1rem 1.2rem;
-  border-radius: 20px;
-  // cursor: pointer;
-  transition: all 400ms ease;
+    font-size: clamp(var(--font-small), 15vw, var(--font-medium-small));
+    font-weight: 300;
+    border: black solid 4px;
+    color: black;
+    background: var(--main-color);
+    display: inline-block;
+    padding: 1rem 1.2rem;
+    border-radius: 20px;
+    // cursor: pointer;
+    transition: all 400ms ease;
 }
 
 .btn:hover {
-  background: black;
-  color: var(--main-color);
-  border-color: transparent;
+    background: black;
+    color: var(--main-color);
+    border-color: transparent;
 }
 
 // @include mq("tablet", min) {

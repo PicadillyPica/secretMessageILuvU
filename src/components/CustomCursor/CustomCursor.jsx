@@ -4,6 +4,8 @@ import CustomCursorContext from "./context/CustomCursorContext";
 import { FiMousePointer } from "react-icons/fi";
 
 const CustomCursor = () => {
+  //The code below use to track mouse position
+  //the mouse cursor is hidden in index.scss and will be replace with custom cursor
   const { type } = useContext(CustomCursorContext);
   const mainCursor = React.useRef(null);
 

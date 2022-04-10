@@ -1,83 +1,78 @@
 .main-cursor,
 .secondary-cursor {
-  z-index: 10000;
-
-  pointer-events: none;
-  // overflow: hidden;
-  transform: translate3d(0, 0, 0);
-  position: fixed;
+    z-index: 10000;
+    pointer-events: none;
+    // overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    position: fixed;
 }
 
 .main-cursor {
-  transition: opacity 1s cubic-bezier(0.77, 0, 0.175, 1);
-  // animation: fadeIn 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-  // mix-blend-mode: difference;
-
-  .main-cursor-background {
-    padding-top: 50%;
-    padding-left: 50%;
-    width: 200px;
-    height: 200px;
-    color: var(--main-color);
-    animation: rotateLeft 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-    
-    // background: white;
-    // border-radius: 50%;
-  }
+    transition: opacity 1s cubic-bezier(0.77, 0, 0.175, 1);
+    // animation: fadeIn 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+    // mix-blend-mode: difference;
+    .main-cursor-background {
+        padding-top: 50%;
+        padding-left: 50%;
+        width: 200px;
+        height: 200px;
+        color: var(--main-color);
+        animation: rotateLeft 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+        // background: white;
+        // border-radius: 50%;
+    }
 }
 
+//style for pointer
 .pointer {
-  .main-cursor-background {
-    animation: rotateRight 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-  }
+    .main-cursor-background {
+        animation: rotateRight 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+    }
 }
 
+//style for text
 .text {
-  .main-cursor-background {
-    background: var(--main-color);
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    animation: scaleUp 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
-  }
+    .main-cursor-background {
+        background: var(--main-color);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        animation: scaleUp 1s cubic-bezier(0.77, 0, 0.175, 1) 0s forwards;
+    }
 }
 
 @keyframes rotateRight {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(20deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
 }
 
 @keyframes rotateLeft {
-  from {
-    transform: rotate(20deg);
-  }
-
-  to {
-    transform: rotate(0deg);
-  }
+    from {
+        transform: rotate(20deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }
 
 @keyframes scaleUp {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.5);
-  }
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
 }
 
 @keyframes scaleDown {
-  from {
-    transform: scale(1.5);
-  }
-
-  to {
-    transform: scale(1);
-  }
+    from {
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(1);
+    }
 }
